@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Learn ASL fingerspelling</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    
+    <div class="circle asl" id="circle"></div>
+
+    <div class="horizontal">
+      <button class="box" onclick="repeat()">repeat</button>
+      <button class="box accent" onclick="answer()">show answer</button>
+      <button class="box" onclick="next()">next</button>
+    </div>
+    <div class="horizontal">
+      <span class="text">faster</span> <input type="range" min="50" max="2000" step="100"> <span class="text">slower</span>
+    </div>
+    
+    <div class="horizontal">
+      <form>
+        <input type="radio" name="language" id="asl">
+        <span class="text">ASL</span>
+        <input type="radio" name="language" id="auslan">
+        <span class="text">Auslan</span>
+      </form>
+      <button type="button" onclick="changeLanguage()" class="box">Set Language</button>
+    </div>
+
+    <footer>
+      <p>
+        a <a href="https://glitch.com/edit/#!/fingerspell">glitch</a> by <a href="https://twitter.com/notwaldorf">monica</a> who
+        is trying to learn ASL this way.
+      </p>
+      <p>
+        forked by <a href="https://twitter.com/jameskingsmill">james</a> who is trying to learn Auslan this way.
+      </p>
+    </footer>
+  </body>
+</html>
+
